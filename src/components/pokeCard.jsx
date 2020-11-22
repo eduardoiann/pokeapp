@@ -6,7 +6,7 @@ export default function pokeCard(name, url, id, type = []) {
   return (
     <div className="pkContainer" key={`${url}`}>
       <Link to={`/details/${id}`}>
-        <img style={{ width: '290px' }} alt={`${name} PokeCard`} src={url}></img>
+        <img style={{ width: '100%' }} alt={`${name} PokeCard`} src={url}></img>
       </Link>
       <div>
         <span>

@@ -3,19 +3,18 @@
   flex-direction: column;
   margin: 5px 15px;
   padding: 5px 20px;
-  // border: 1px solid black;
+  border: 1px solid black;
+  // width: ;
 
   div {
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
-    border: 2.5px solid black;
+    border: 7.5px double black;
   }
 
   span {
     display: flex;
-    // border: 1px solid black;
-    // border-radius: 5px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 17.5rem;
     margin: auto;
     

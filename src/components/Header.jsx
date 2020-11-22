@@ -1,16 +1,16 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import PokemonContext from '../context/PokemonContext';
-import * as API from '../services'
-import './header.scss'
+import * as API from '../services';
+import './header.scss';
 
 export default function Header({ title }) {
   const [pokeSearch, setPokeSearch] = useState('');
-  const { pokeData, setPokeData } = useContext(PokemonContext);
+  const { setPokeData } = useContext(PokemonContext);
 
-  const fetchCards = async (e, name) => {
+  const fetchCardsByName = async (e, name) => {
     e.preventDefault();
     if (name === '') return null;
-    return setPokeData(await API.fetchCardByPokemonName(name));
+    return setPokeData(await API.fetchPokemonCardByName(name));
   };
 
   return (
@@ -19,14 +19,15 @@ export default function Header({ title }) {
         <h1 className="title">{title}</h1>
         <form>
           <input
+            className="search-input"
             onChange={(e) => {
               setPokeSearch(e.target.value);
             }}
             value={pokeSearch}
-            placeholder="Search for your Pokemon"
+            placeholder="Search for your Pokemon!"
           />
-          <button onClick={(e) => fetchCards(e, pokeSearch)}>Search!</button>
-          {/* <button onClick={(e) => fetchAll(e)}>Search 'Em All!</button> */}
+          <button className="search-btn" onClick={(e) => fetchCardsByName(e, pokeSearch)}>I choose you!
+        </button>
         </form>
       </header>
     </div>

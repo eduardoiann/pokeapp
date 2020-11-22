@@ -1,3 +1,17 @@
+.pokemon-display {
+  display: flex;
+  overflow-y: scroll;
+  // justify-content: row;
+}
+
+@media (max-width: 500px) {
+  .pokemon-display {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: column;
+  }
+}
+
 /* Extra small (phones, 600px and down) */
 /* Small (tables and larger phones, 600px and up) */
 /* Medium (landscape tablets, 768px and up) */
