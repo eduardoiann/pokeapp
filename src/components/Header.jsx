@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import PokemonContext from '../context/PokemonContext';
 import * as API from '../services'
+import './header.scss'
 
 export default function Header({ title }) {
   const [pokeSearch, setPokeSearch] = useState('');
@@ -15,7 +16,7 @@ export default function Header({ title }) {
   return (
     <div>
       <header>
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
         <form>
           <input
             onChange={(e) => {

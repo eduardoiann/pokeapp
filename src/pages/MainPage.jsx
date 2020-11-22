@@ -25,10 +25,11 @@ export default function MainPage() {
           <Loading />
         ) : (
           pokeData.map((pokemon) =>
-            pokeCard(pokemon.name, pokemon.imageUrlHiRes, pokemon.id, pokemon.types)
+            pokeCard(pokemon.name, pokemon.imageUrl, pokemon.id, pokemon.types)
           )
         )}
       </div>
+      {console.log(pokeData)}
     </div>
   );
 }

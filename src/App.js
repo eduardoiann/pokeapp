@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import PokeDetailsCard from './components/PokeDetailsCard';
 import PokemonContextProvider from './context/PokemonContextProvider';
 import MainPage from './pages/MainPage';
 
@@ -10,7 +11,8 @@ function App() {
       <PokemonContextProvider>
         <Router>
           <Switch>
-            <Route exact path="/main" component={MainPage} />
+            <Route exact path="/" component={MainPage} />
+            <Route exact path="/details/:id" component={PokeDetailsCard} />
           </Switch>
         </Router>
       </PokemonContextProvider>

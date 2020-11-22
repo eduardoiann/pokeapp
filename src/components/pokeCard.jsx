@@ -5,13 +5,13 @@ import './pokeCard.scss';
 export default function pokeCard(name, url, id, type = []) {
   return (
     <div className="pkContainer" key={`${url}`}>
-      <Link to={`/details/${name}`}>
+      <Link to={`/details/${id}`}>
         <img style={{ width: '290px' }} alt={`${name} PokeCard`} src={url}></img>
       </Link>
       <div>
         <span>
           <p>NAME:</p>
-          <p> {name}</p>
+          <p>{name}</p>
         </span>
         <span>
           <p>ID:</p>
