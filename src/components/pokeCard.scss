@@ -1,0 +1,30 @@
+.pkContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+  padding: 5px 20px;
+  // border: 1px solid black;
+
+  span {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(90, 90, 90, 0.753);
+    width: 17.5rem;
+    margin: auto;
+    
+    p {
+      color: #FFF550;
+      width: 9rem;
+      margin: 0;
+      padding: 5px;
+      text-align: left;
+    }
+
+    :last-child {
+      color:white;
+      text-align: end;
+      border-left: 1px solid black;
+    }
+  }
+}
