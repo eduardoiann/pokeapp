@@ -4,12 +4,10 @@ import Modal from './modal';
 import Loading from '../components/Loading';
 import './pokeDetailsCard.scss';
 import ItemDetailsCard from './itemDetailsCard';
-import { Link } from 'react-router-dom';
 
 export default function PokeDetailsCard({ props: { card } }) {
   const [defineAttack, setDefineAttack] = useState(null);
   const { showModal, toggleModal } = useContext(PokemonContext);
-  console.log(card.resistances);
 
   const renderDiv = (att) => {
     setDefineAttack(att);
@@ -25,7 +23,7 @@ export default function PokeDetailsCard({ props: { card } }) {
       <img style={{ width: '90%' }} alt={`${card.name} PokeCard`} src={card.imageUrlHiRes} />
       <div className="container">
         <div className="btn-container">
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
             {card.attacks === undefined
               ? ''
               : card.attacks.map((att) => (
@@ -33,11 +31,6 @@ export default function PokeDetailsCard({ props: { card } }) {
                     {att.name}
                   </button>
                 ))}
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <Link to="/">
-              <button className="att-btn">Return</button>
-            </Link>
           </div>
           {showModal === true ? <Modal props={defineAttack} /> : null}
         </div>

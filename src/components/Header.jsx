@@ -24,7 +24,7 @@ export default function Header({ title }) {
               setPokeSearch(e.target.value);
             }}
             value={pokeSearch}
-            placeholder="Search for your Pokemon!"
+            placeholder="Pokemon..."
           />
           <button className="search-btn" onClick={(e) => fetchCardsByName(e, pokeSearch)}>I choose you!
         </button>
