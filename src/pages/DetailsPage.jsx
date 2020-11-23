@@ -17,7 +17,5 @@ export default function DetailsPage() {
     fetchCardById();
   }, []);
 
-  console.log(pokeID);
-
   return <div>{pokeID === null ? <Loading /> : <PokeDetailsCard props={pokeID} />}</div>;
 }

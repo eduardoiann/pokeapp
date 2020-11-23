@@ -3,8 +3,6 @@
   flex-direction: column;
   margin: 5px 15px;
   padding: 5px 20px;
-  border: 1px solid black;
-  // width: ;
 
   div {
     background-color: rgb(255, 255, 255);
@@ -14,13 +12,12 @@
 
   span {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 17.5rem;
     margin: auto;
     
     p {
       color: black;
-      width: 7rem;
       margin: 0;
       padding: 5px;
       letter-spacing: 2.5px;
@@ -34,7 +31,6 @@
     :last-child {
       color:black;
       text-align: end;
-      // border-left: 1px solid black;
     }
   }
 }

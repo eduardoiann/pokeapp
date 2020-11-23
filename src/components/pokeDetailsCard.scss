@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    // border-bottom: 5px double black;
 
     span:last-child {
       border: none;
@@ -20,5 +19,33 @@
   p {
     -webkit-font-smoothing: none;
     font-family: 'pokemon-font', monospace;
+  }
+}
+.btn-container {
+  // width: 90%;
+  padding-bottom: .6rem;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  margin: auto;
+
+
+  button {
+    height: 4rem;
+    width: 40vw;
+    font-family: Pokemon;
+    font-size: 3.8vw;
+    background-color: rgb(61, 125, 202);
+    color: rgb(255, 203, 5);
+    text-shadow: -1px 0 rgb(0, 58, 112), 1px 1px rgb(0, 58, 112), 1px 0 rgb(0, 58, 112),
+      0 -1px rgb(0, 26, 1180);
+    -webkit-text-stroke: 0.5px rgb(61, 125, 202);
+    border: none;
+    margin-left: 10px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+    box-shadow: -0.5rem 0.5rem 0.1rem rgba(black, 0.2);
   }
 }

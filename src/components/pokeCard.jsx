@@ -19,7 +19,7 @@ export default function pokeCard(name, url, id, type = []) {
         </span>
         {type.map((type) => (
           <span key={`${id}${type}`}>
-            <p>TYPES: </p>
+            <p>TYPE: </p>
             <p>{type}</p>
           </span>
         ))}
