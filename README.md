@@ -37,14 +37,54 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Inside the code
 
-After running the scripts in the previous section and accessing the main -src- folder, you will encounter (no 'pun'kemon intended rsrs) a simple folder structure that reflects the React structure: Components, Pages, Context, Service, Styles and Utils. I'll briefly explain each next:
+After running the scripts in the previous section and accessing the main .src folder, you will encounter (no 'pun'kemon intended rsrs) a simple folder structure that reflects the React structure: Components, Pages, Context, Service, Styles and Utils. I'll briefly explain each next:
 
   ### Components
   
    All components are placed inside this folder. Each one has its specific subfolder, that holds both .jsx and .scss files that makes the said component. For example:
    
-  > Components (folder)
-    >> Header (sub-folder)
-      >>> Header.jsx
-      >>> header.scss
+   ```
+📦src
+ ┣ 📂components
+ ┃ ┣ 📂DetailsCard
+ ┃ ┃ ┣ 📜PokeDetailsCard.jsx
+ ┃ ┃ ┣ 📜itemDetailsCard.jsx
+ ┃ ┃ ┗ 📜pokeDetailsCard.scss
+ ┃ ┣ 📂Header
+ ┃ ┃ ┣ 📜Header.jsx
+ ┃ ┃ ┗ 📜header.scss
+ ┃ ┣ 📂Loading
+ ┃ ┃ ┣ 📜Loading.jsx
+ ┃ ┃ ┗ 📜loading.scss
+ ...
+```
+ Using this method of organization allows me to better visualize each component and to plan ahead how many more components I'll need, or better, how many more components can I still breakdown in smaller segments to better reuse them in the future.
+ 
+ ### Pages
+ 
+  Well, it contains the pages that my application will need. It mostly call the necessary components to render the page itself. The 'MainPage.jsx' for example, aside from the use of Contexts and/or State Effects, only renders three components: Header, Loading and PokeCard.
+```
+  return (
+    <div>
+      <Header title="Gotta Search 'Em All!" />
+      <div className="pokemon-display">
+        {pokeData === null || pokeData.length === 0 ? (
+          <Loading />
+        ) : (
+          pokeData.map((pokemon) => {
+            return <PokeCard key={pokemon.id} props={pokemon} />;
+          })
+        )}
+      </div>
+    </div>
+  );
+  
+```
 
+ ### Context
+  
+  It holds my Context and Provider. I've used ContextApi to manage the State.
+  
+ ### Services
+ 
+  Where all the API calls are made. Not much to explain here. Everytime that I needed to fetch data from the API Pokemon TCG(https://pokemontcg.io/), I would use one of the functions inside the index.js file. It provides de data needed to populate the app. 
