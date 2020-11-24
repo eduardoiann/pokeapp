@@ -1,3 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@font-face {
+  font-family: 'Pokemon';
+  src: url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot');
+  src: url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon') format('svg');
+}
+
 @mixin pokemon-font-text {
   -webkit-text-stroke: $pokemon-text-stroke;
   color: $pokemon-font-color;
@@ -22,4 +34,4 @@ $pokemon-button-bgcolor: rgb(61, 125, 202);
 $pokemon-button-box-shadow: -0.5rem 0.5rem 0.1rem rgba(black, 0.2);
 $pokemon-button-text-shadow: -3px 0 rgb(0, 58, 112), 1px 1px rgb(0, 58, 112), 1px 0 rgb(0, 58, 112),
   0 -1px rgb(0, 26, 1180);
-$pokemon-button-text-stroke: .5px rgb(61, 125, 202);
+$pokemon-button-text-stroke: 0.5px rgb(61, 125, 202);
