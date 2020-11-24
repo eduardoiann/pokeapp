@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import PokemonContext from '../../context/PokemonContext';
 import fetchPokemonCardsByName from '../../services/fetchPokemonCardsByName';
+import PokemonContext from '../../context/PokemonContext';
 import './header.scss';
 
 export default function Header({ title }) {

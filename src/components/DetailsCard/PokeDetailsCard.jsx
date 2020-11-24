@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
 import PokemonContext from '../../context/PokemonContext';
-import Modal from '../Modal/Modal';
-import Loading from '../../components/Loading/Loading';
-import './pokeDetailsCard.scss';
 import ItemDetailsCard from './itemDetailsCard';
+import Loading from '../../components/Loading/Loading';
+import Modal from '../Modal/Modal';
+import './pokeDetailsCard.scss';
 
 export default function PokeDetailsCard({ props: { card } }) {
   const [defineAttack, setDefineAttack] = useState(null);

@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useCallback } from 'react';
-import Loading from '../../components/Loading/Loading';
-import PokeCard from '../../components/PokeCard/PokeCard';
 import PokemonContext from '../../context/PokemonContext';
-import './mainPage.scss';
 import fetchAllPokemonCards from '../../services/fetchAllPokemonCards';
 import Header from '../../components/Header/Header';
+import Loading from '../../components/Loading/Loading';
+import PokeCard from '../../components/PokeCard/PokeCard';
+import './mainPage.scss';
 
 export default function MainPage() {
   const { pokeData, setPokeData } = useContext(PokemonContext);

@@ -1,37 +1,32 @@
 @import '../../styles/colorPallete.scss';
 
 .title {
+  @include pokemon-font-text;
   font-family: Pokemon;
   font-size: 2.5rem;
   letter-spacing: 3px;
-  color: $pokemon-font-color;
-  text-shadow: $pokemon-text-shadow;
-  -webkit-text-stroke: $pokemon-text-stroke;
 }
 
 .search-input {
   border: none;
-  width: 35%;
-  height: 35px;
   border-radius: 5px;
-  margin-bottom: 1.3rem;
   box-shadow: $pokemon-button-box-shadow;
+  height: 35px;
+  margin-bottom: 1.3rem;
   padding-left: .5rem;
+  width: 35%;
 }
 
 .search-btn {
-  height: 35px;
-  width: 10rem;
+  @include pokemon-font-button;
+  background-color:  rgba(255, 255, 255, 0.747);
+  border: none;
+  border-radius: 5px;
   font-family: Pokemon;
   font-size: 1rem;
-  background-color:  rgba(255, 255, 255, 0.747);
-  color: $pokemon-font-color;
-  text-shadow: $pokemon-button-text-shadow;
-  -webkit-text-stroke: $pokemon-button-text-stroke;
-  border: none;
-  margin-left: 10px;
-  border-radius: 5px;
+  height: 35px;
   letter-spacing: 3px;
+  margin-left: 10px;
   padding-bottom: 1rem;
-  box-shadow: $pokemon-button-box-shadow;
+  width: 10rem;
 }

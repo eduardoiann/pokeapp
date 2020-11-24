@@ -15,9 +15,9 @@ const Modal = ({ props }) => {
             ? 'View Card for Info'
             : props.convertedEnergyCost}
         </p>
+        <div>
           <p>Costs:</p>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-around', width: '50vw' }}>
+          <div>
             {props.cost === undefined
               ? 'View card for Info'
               : props.cost.map((cost) => <p key={`${cost}${Math.random() * 100}`}>{cost}</p>)}
@@ -28,7 +28,7 @@ const Modal = ({ props }) => {
       </div>
       <div className="actions">
         <button onClick={() => toggleModal()} className="toggle-button">
-         <p>Close</p>
+          <p>Close</p>
         </button>
       </div>
     </div>

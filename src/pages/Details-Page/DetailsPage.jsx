@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import Loading from '../../components/Loading/Loading';
 import fetchPokemonCardByID  from '../../services/fetchPokemonCardByID';
+import Loading from '../../components/Loading/Loading';
 import PokeDetailsCard from '../../components/DetailsCard/PokeDetailsCard';
 
 export default function DetailsPage() {

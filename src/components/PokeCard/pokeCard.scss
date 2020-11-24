@@ -1,7 +1,7 @@
 .pkContainer {
   display: flex;
   flex-direction: column;
-  padding: 2vh .5vw;
+  padding: 2vh 0.5vw;
   margin: auto;
 
   div {
@@ -13,23 +13,23 @@
   span {
     display: flex;
     justify-content: space-between;
-    width: 17.5rem;
     margin: auto;
-    
+    width: 17.5rem;
+
     p {
+      -webkit-font-smoothing: none;
       color: black;
+      font-family: 'pokemon-font', monospace;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 2.5px;
       margin: 0;
       padding: 5px;
-      letter-spacing: 2.5px;
       text-align: left;
-      font-weight: bold;
-      font-size: .85rem;
-      -webkit-font-smoothing: none;
-      font-family: 'pokemon-font', monospace;
     }
 
     :last-child {
-      color:black;
+      color: black;
       text-align: end;
     }
   }

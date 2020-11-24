@@ -1,3 +1,16 @@
+@mixin pokemon-font-text {
+  -webkit-text-stroke: $pokemon-text-stroke;
+  color: $pokemon-font-color;
+  text-shadow: $pokemon-text-shadow;
+}
+
+@mixin pokemon-font-button {
+  -webkit-text-stroke: $pokemon-button-text-stroke;
+  box-shadow: $pokemon-button-box-shadow;
+  color: $pokemon-font-color;
+  text-shadow: $pokemon-button-text-shadow;
+}
+
 /* Font colors for Header main Title */
 $pokemon-font-color: rgb(255, 203, 5);
 $pokemon-text-shadow: -6px 0 rgb(0, 58, 112), 5px 5px rgb(0, 58, 112), 1px 0 rgb(0, 58, 112),
@@ -6,7 +19,7 @@ $pokemon-text-stroke: 2.6px rgb(61, 125, 202);
 
 /* Font attributes for buttons or inputs */
 $pokemon-button-bgcolor: rgb(61, 125, 202);
+$pokemon-button-box-shadow: -0.5rem 0.5rem 0.1rem rgba(black, 0.2);
 $pokemon-button-text-shadow: -3px 0 rgb(0, 58, 112), 1px 1px rgb(0, 58, 112), 1px 0 rgb(0, 58, 112),
   0 -1px rgb(0, 26, 1180);
 $pokemon-button-text-stroke: .5px rgb(61, 125, 202);
-$pokemon-button-box-shadow: -0.5rem 0.5rem 0.1rem rgba(black, 0.2);

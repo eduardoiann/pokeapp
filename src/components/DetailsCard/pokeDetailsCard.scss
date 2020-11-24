@@ -1,13 +1,13 @@
 @import '../../styles/colorPallete.scss';
 
 .container {
-  width: 95%;
-  border: 6px double black;
   background-color: rgba(255, 255, 255, 0.842);
-  margin: auto;
+  border: 6px double black;
   display: flex;
   flex-direction: column;
-
+  margin: auto;
+  width: 95%;
+  
   span {
     display: flex;
     justify-content: space-between;
@@ -24,34 +24,33 @@
   }
 }
 .btn-container {
-  // width: 90%;
-  padding-bottom: .6rem;
-  display: flex;
   align-content: center;
+  display: flex;
   flex-direction: row;
   margin: auto;
+  padding-bottom: .6rem;
 
 
   button {
-    height: 8vh;
-    width: 30vw;
     background-color: $pokemon-button-bgcolor;
     border: none;
-    margin-left: 10px;
-    margin-top: 0.5rem;
     border-radius: 5px;
     box-shadow: $pokemon-button-box-shadow;
+    height: 8vh;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    width: 30vw;
     
     p{
-      text-align: center;
-      font-family: Pokemon;
-      color: $pokemon-font-color;
-      text-shadow: $pokemon-button-text-shadow;
       -webkit-text-stroke: $pokemon-button-text-stroke;
+      color: $pokemon-font-color;
+      font-family: Pokemon;
+      font-size: 1.3rem;
       letter-spacing: .2rem;
       margin: 0;
       padding-bottom: 1rem;
-      font-size: 1.3rem;
+      text-align: center;
+      text-shadow: $pokemon-button-text-shadow;
     }
     
   }
