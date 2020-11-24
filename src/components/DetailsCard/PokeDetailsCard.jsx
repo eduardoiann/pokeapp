@@ -5,6 +5,7 @@ import Modal from '../Modal/Modal';
 import './pokeDetailsCard.scss';
 
 export default function PokeDetailsCard({ card }) {
+  console.log(card)
   const [defineAttack, setDefineAttack] = useState(null);
   const { showModal, toggleModal } = useContext(PokemonContext);
 
@@ -45,7 +46,7 @@ export default function PokeDetailsCard({ card }) {
             <p>{type.toUpperCase()}</p>
           </span>
         ))}
-        {card.weaknesses.map((info) => (
+        {card.weaknesses === undefined ? null : card.weaknesses.map((info) => (
           <div key={`${info}`}>
             <p>WEAKNESSES: </p>
             <span>
