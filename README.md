@@ -6,7 +6,7 @@
 
 ## Description
 
-This app was a 4 day project designed to be an technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
+This app was a 4 day project designed to be a technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
 
   - Must use React,Vue or Angular;
   - Must use the API Pokemon TCG(https://pokemontcg.io/);
