@@ -1,5 +1,9 @@
 # PokeApp
 
+## Disclaimer
+
+  I'm currently studying Web Development, and I have been for the past 9 months. This project was made for the purpose listed bellow, and nothing more. Any feedback will be extremely welcomed and appreciated!
+
 ## Description
 
 This app was a 4 day project designed to be an technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
@@ -88,3 +92,27 @@ After running the scripts in the previous section and accessing the main .src fo
  ### Services
  
   Where all the API calls are made. Not much to explain here. Everytime that I needed to fetch data from the API Pokemon TCG(https://pokemontcg.io/), I would use one of the functions inside the index.js file. It provides de data needed to populate the app. 
+  
+ ### Styles
+ 
+  Where all the SASS variables that I created are stored for easy import throughout the app. There aren't many, but they are mine and I like them! =D
+  
+ ### Utils
+ 
+  A folder to store anything that didn't belong or fit the description of the previous ones. There is just one .gif and one .jpg files inside this folder.
+
+
+## Next Steps
+ 
+ I intend to keep working on this app, as there are a lot of improvements to be made. Such as:
+  
+  - Writing of tests;
+  - Improve page responsiveness;
+  - Improve layout and style;
+  - Add more functionalities;
+  - Refactor some functions;
+  - Add language support;
+  - Write a better documentation;
+  
+### Thanks and that's all! 
+________________________________________________________________________________________________________________________________________________________________
