@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import PokemonContext from '../../context/PokemonContext';
-import * as API from '../../services';
+import fetchPokemonCardsByName from '../../services/fetchPokemonCardsByName';
 import './header.scss';
 
 export default function Header({ title }) {
@@ -10,7 +10,7 @@ export default function Header({ title }) {
   const fetchCardsByName = async (e, name) => {
     e.preventDefault();
     if (name === '') return null;
-    return setPokeData(await API.fetchPokemonCardByName(name));
+    return setPokeData(await fetchPokemonCardsByName(name));
   };
 
   return (

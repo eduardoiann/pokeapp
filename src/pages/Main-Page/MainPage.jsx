@@ -3,7 +3,7 @@ import Loading from '../../components/Loading/Loading';
 import PokeCard from '../../components/PokeCard/PokeCard';
 import PokemonContext from '../../context/PokemonContext';
 import './mainPage.scss';
-import { fetchAllPokemonCards } from '../../services/index.js';
+import fetchAllPokemonCards from '../../services/fetchAllPokemonCards';
 import Header from '../../components/Header/Header';
 
 export default function MainPage() {

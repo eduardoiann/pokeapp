@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Loading from '../../components/Loading/Loading';
 import PokeDetailsCard from '../../components/DetailsCard/PokeDetailsCard';
-import * as API from '../../services';
+import fetchPokemonCardByID  from '../../services/fetchPokemonCardByID';
 
 export default function DetailsPage() {
   const url = window.location.href;
@@ -10,7 +10,7 @@ export default function DetailsPage() {
   const [pokeID, setpokeID] = useState(null);
 
   const fetchCardById = useCallback(async () => {
-    return setpokeID(await API.fetchPokemonCardByID(pokeIdUrl));
+    return setpokeID(await fetchPokemonCardByID(pokeIdUrl));
   }, [setpokeID, pokeIdUrl]);
 
   useEffect(() => {
