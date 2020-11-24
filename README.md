@@ -95,7 +95,7 @@ After running the scripts in the previous section and accessing the main .src fo
   
  ### Styles
  
-  Where all the SASS variables that I created are stored for easy import throughout the app. There aren't many, but they are mine and I like them! =D
+  Where all the SASS variables that I created are stored for easy import throughout the app, such as  "$pokemon-font-color" or "$pokemon-button-text-shadow"
   
  ### Utils
  
