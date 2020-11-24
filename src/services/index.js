@@ -1,4 +1,3 @@
-
 /* Function to order the array of cards by name ASC */
 const sortFunction = (array) => {
   const orderedArray = array.cards.sort((a, b) =>
