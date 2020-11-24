@@ -1,8 +1,8 @@
 .pkContainer {
   display: flex;
   flex-direction: column;
-  margin: 5px 15px;
-  padding: 5px 20px;
+  padding: 2vh .5vw;
+  margin: auto;
 
   div {
     background-color: rgb(255, 255, 255);
@@ -32,5 +32,13 @@
       color:black;
       text-align: end;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pkContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
   }
 }

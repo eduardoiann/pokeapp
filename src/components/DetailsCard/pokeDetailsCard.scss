@@ -1,3 +1,5 @@
+@import '../../styles/colorPallete.scss';
+
 .container {
   width: 95%;
   border: 6px double black;
@@ -31,21 +33,28 @@
 
 
   button {
-    height: 4rem;
-    width: 40vw;
-    font-family: Pokemon;
-    font-size: 3.8vw;
-    background-color: rgb(61, 125, 202);
-    color: rgb(255, 203, 5);
-    text-shadow: -1px 0 rgb(0, 58, 112), 1px 1px rgb(0, 58, 112), 1px 0 rgb(0, 58, 112),
-      0 -1px rgb(0, 26, 1180);
-    -webkit-text-stroke: 0.5px rgb(61, 125, 202);
+    height: 8vh;
+    width: 30vw;
+    background-color: $pokemon-button-bgcolor;
     border: none;
     margin-left: 10px;
     margin-top: 0.5rem;
     border-radius: 5px;
-    letter-spacing: 3px;
-    padding-bottom: 1rem;
-    box-shadow: -0.5rem 0.5rem 0.1rem rgba(black, 0.2);
+    box-shadow: $pokemon-button-box-shadow;
+    
+    p{
+      text-align: center;
+      font-family: Pokemon;
+      color: $pokemon-font-color;
+      text-shadow: $pokemon-button-text-shadow;
+      -webkit-text-stroke: $pokemon-button-text-stroke;
+      letter-spacing: .2rem;
+      margin: 0;
+      padding-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    
   }
+
+
 }

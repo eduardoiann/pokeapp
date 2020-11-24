@@ -1,14 +1,20 @@
 .pokemon-display {
   display: flex;
-  overflow-y: scroll;
-  // justify-content: row;
+  // overflow-y: scroll;
+  // justify-content: column;
+  flex-wrap: wrap;
+
+  img {
+    width: 100%;
+  }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .pokemon-display {
     display: flex;
     overflow-x: scroll;
-    justify-content: column;
+    justify-content: row;
+    flex-wrap: nowrap;
   }
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import PokemonContext from '../context/PokemonContext';
-import * as API from '../services';
+import PokemonContext from '../../context/PokemonContext';
+import * as API from '../../services';
 import './header.scss';
 
 export default function Header({ title }) {
@@ -26,7 +26,7 @@ export default function Header({ title }) {
             value={pokeSearch}
             placeholder="Pokemon..."
           />
-          <button className="search-btn" onClick={(e) => fetchCardsByName(e, pokeSearch)}>I choose you!
+          <button data-testid="search-btn" className="search-btn" onClick={(e) => fetchCardsByName(e, pokeSearch)}>I choose you!
         </button>
         </form>
       </header>

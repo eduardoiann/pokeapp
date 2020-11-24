@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import PokemonContext from '../context/PokemonContext';
+import PokemonContext from '../../context/PokemonContext';
 import './modal.scss';
 
 const Modal = ({ props }) => {
@@ -28,7 +28,7 @@ const Modal = ({ props }) => {
       </div>
       <div className="actions">
         <button onClick={() => toggleModal()} className="toggle-button">
-          OK
+         <p>Close</p>
         </button>
       </div>
     </div>

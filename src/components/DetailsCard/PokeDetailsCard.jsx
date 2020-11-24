@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import PokemonContext from '../context/PokemonContext';
-import Modal from './modal';
-import Loading from '../components/Loading';
+import PokemonContext from '../../context/PokemonContext';
+import Modal from '../Modal/Modal';
+import Loading from '../../components/Loading/Loading';
 import './pokeDetailsCard.scss';
 import ItemDetailsCard from './itemDetailsCard';
 
@@ -28,7 +28,7 @@ export default function PokeDetailsCard({ props: { card } }) {
               ? ''
               : card.attacks.map((att) => (
                   <button className="att-btn" key={att.name} onClick={() => renderDiv(att)}>
-                    {att.name}
+                    <p>{att.name}</p>
                   </button>
                 ))}
           </div>

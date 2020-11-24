@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './pokeCard.scss';
 
-export default function pokeCard(name, url, id, type = []) {
+export default function PokeCard({props: {name, imageUrl, id, types = []}}) {
   return (
-    <div className="pkContainer" key={`${url}`}>
+    <div className="pkContainer" key={`${imageUrl}`}>
       <Link to={`/details/${id}`}>
-        <img style={{ width: '100%' }} alt={`${name} PokeCard`} src={url}></img>
+        <img alt={`${name} PokeCard`} src={imageUrl}></img>
       </Link>
       <div>
         <span>
@@ -17,7 +17,7 @@ export default function pokeCard(name, url, id, type = []) {
           <p>ID:</p>
           <p>{id}</p>
         </span>
-        {type.map((type) => (
+        {types.map((type) => (
           <span key={`${id}${type}`}>
             <p>TYPE: </p>
             <p>{type}</p>
