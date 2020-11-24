@@ -1,11 +1,10 @@
 import React, { useState, useContext } from 'react';
 import PokemonContext from '../../context/PokemonContext';
-import ItemDetailsCard from './itemDetailsCard';
 import Loading from '../../components/Loading/Loading';
 import Modal from '../Modal/Modal';
 import './pokeDetailsCard.scss';
 
-export default function PokeDetailsCard({ props: { card } }) {
+export default function PokeDetailsCard({ card }) {
   const [defineAttack, setDefineAttack] = useState(null);
   const { showModal, toggleModal } = useContext(PokemonContext);
 
@@ -14,12 +13,10 @@ export default function PokeDetailsCard({ props: { card } }) {
     toggleModal();
   };
 
-  return card.attacks === undefined ? (
-    <ItemDetailsCard card={card} />
-  ) : card === null ? (
+  return card === null ? (
     <Loading />
   ) : (
-    <div style={{ width: '100%' }} key={`${card.url}`}>
+    <div key={`${card.url}`}>
       <img style={{ width: '90%' }} alt={`${card.name} PokeCard`} src={card.imageUrlHiRes} />
       <div className="container">
         <div className="btn-container">
@@ -28,7 +25,7 @@ export default function PokeDetailsCard({ props: { card } }) {
               ? ''
               : card.attacks.map((att) => (
                   <button className="att-btn" key={att.name} onClick={() => renderDiv(att)}>
-                    <p>{att.name}</p>
+                    <p className="att-name">{att.name}</p>
                   </button>
                 ))}
           </div>

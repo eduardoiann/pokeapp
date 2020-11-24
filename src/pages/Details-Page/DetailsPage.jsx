@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import fetchPokemonCardByID  from '../../services/fetchPokemonCardByID';
 import Loading from '../../components/Loading/Loading';
-import PokeDetailsCard from '../../components/DetailsCard/PokeDetailsCard';
+import Details from '../../components/DetailsCard/Details';
 
 export default function DetailsPage() {
   const url = window.location.href;
@@ -17,5 +17,5 @@ export default function DetailsPage() {
     fetchCardById();
   }, [fetchCardById]);
 
-  return <div>{pokeID === null ? <Loading /> : <PokeDetailsCard props={pokeID} />}</div>;
+  return <div>{pokeID === null ? <Loading /> : <Details props={pokeID} />}</div>;
 }
