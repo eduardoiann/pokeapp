@@ -1,10 +1,13 @@
-const sortFunction = async (array) => {
-  const orderedArray = await array.cards.sort((a, b) =>
+
+/* Function to order the array of cards by name ASC */
+const sortFunction = (array) => {
+  const orderedArray = array.cards.sort((a, b) =>
   a.name < b.name ? -1 : a.name > b.name ? 1 : 0
 );
 return orderedArray
 }
 
+/* Fetch all 100 pokemon cards */
 const fetchAllPokemonCards = async () => {
   try {
     const result = await fetch('https://api.pokemontcg.io/v1/cards');
@@ -15,6 +18,7 @@ const fetchAllPokemonCards = async () => {
   }
 };
 
+/* Fetch all cards by any given name */
 const fetchPokemonCardByName = async (name) => {
   const result = await fetch(`https://api.pokemontcg.io/v1/cards?name=${name}`);
   try {
@@ -25,6 +29,7 @@ const fetchPokemonCardByName = async (name) => {
   }
 };
 
+/* Fetch any pokemon card by any given ID */
 const fetchPokemonCardByID = async (id) => {
   try {
     const result = await fetch(`https://api.pokemontcg.io/v1/cards/${id}`);
