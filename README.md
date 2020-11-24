@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# PokeApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+This app was a 4 day project designed to be an technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
+
+  - Must use React,Vue or Angular;
+  - Must use the API Pokemon TCG(https://pokemontcg.io/);
+  - Be responsive, mobile first;
+  - Must utilize routes;
+  - The card's list should be ordered by name ASC;
+  - Must be able to search cards by name;
+  - Location suport (although the translation unnecessary);
+  - Functional build (must be able to download and run the code);
+  - Unitary Tests
+  - E2E Tests;
+  - Must utilize SASS;
+  - Must utilize React Store and State (Vuex, Redux, etc).
+  
+  Not all requirements were met, but the MVP is done and fully functional.
+  
+  For more information - https://github.com/aisdigital/FrontEndChallenge/tree/master - 
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install all necessary dependencies and packages to run the application.
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Inside the code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After running the scripts in the previous section and accessing the main -src- folder, you will encounter (no 'pun'kemon intended rsrs) a simple folder structure that reflects the React structure: Components, Pages, Context, Service, Styles and Utils. I'll briefly explain each next:
 
-### `npm run build`
+  ### Components
+  
+   All components are placed inside this folder. Each one has its specific subfolder, that holds both .jsx and .scss files that makes the said component. For example:
+   
+  > Components (folder)
+    >> Header (sub-folder)
+      >>> Header.jsx
+      >>> header.scss
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
