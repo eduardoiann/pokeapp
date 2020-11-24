@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Loading from '../../components/Loading/Loading';
-import PokeDetailsCard from '../../components/DetailsCard/PokeDetailsCard';
 import fetchPokemonCardByID  from '../../services/fetchPokemonCardByID';
+import PokeDetailsCard from '../../components/DetailsCard/PokeDetailsCard';
 
 export default function DetailsPage() {
   const url = window.location.href;
