@@ -3,14 +3,14 @@ import Loading from '../../components/Loading/Loading';
 import PokeCard from '../../components/PokeCard/PokeCard';
 import PokemonContext from '../../context/PokemonContext';
 import './mainPage.scss';
-import * as API from '../../services';
+import {fetchAllPokemonCards} from '../../services';
 import Header from '../../components/Header/Header';
 
 export default function MainPage() {
   const { pokeData, setPokeData } = useContext(PokemonContext);
 
   const fetchAllCards = useCallback(async () => {
-    return setPokeData(await API.fetchAllPokemonCards());
+    return setPokeData(await fetchAllPokemonCards());
   }, [setPokeData]);
 
   useEffect(() => {
