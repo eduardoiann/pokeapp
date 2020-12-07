@@ -2,13 +2,13 @@
 
 ## Disclaimer
 
-  I'm currently studying Web Development, and I have been for the past 9 months. This project was made for the purpose listed bellow, and nothing more. Any feedback will be extremely welcomed and appreciated!
+  I'm currently studying Web Development, and I have been for the past 9 months. This project was made for the purpose listed below, and nothing more. Any feedback will be extremely welcomed and appreciated!
 
 ## Description
 
-This app was a 4 day project designed to be a technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
+This app was a 4-day project designed to be a technical challenge for a Junior Front-end position at Ilia Digital. It's a Pokemon TCG App that would need to fulfill the following requirements:
 
-  - Must use React,Vue or Angular;
+  - Must use React,Vue, or Angular;
   - Must use the API Pokemon TCG(https://pokemontcg.io/);
   - Be responsive, mobile first;
   - Must utilize routes;
@@ -112,7 +112,7 @@ After running the scripts in the previous section and accessing the main .src fo
   - Add more functionalities;
   - Refactor some functions;
   - Add language support;
-  - Write a better documentation;
+  - Write better documentation;
   
 ### Thanks and that's all! 
 ________________________________________________________________________________________________________________________________________________________________
